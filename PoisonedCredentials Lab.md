@@ -1,15 +1,58 @@
-#### Câu hỏi 1 : Trong bối cảnh sự cố được mô tả trong văn bản, kẻ tấn công đã bắt đầu hành động của mình bằng cách lợi dụng lưu lượng mạng lành tính từ các máu hợp pháp. Bạn có thể phát hiện truy vấn nhập sai do cụ thể do địa chỉ IP 192.168.232.162 thực hiện không.
-![{B6424AA7-2652-41AA-B482-68419F2B2D55}](https://github.com/user-attachments/assets/d9f305be-12bc-4b54-b4f1-5e73ca88ba68)
-* Ở gói tin số 52 chính xác là truy vấn sai chính tả từ máy `192.168.232.162` vì nó yêu cầu phân giải một tên sai chính tả và nó đang dò tìm lỗi từ máy chủ như thông tin cấu hình từ đó khai thác được máy chủ.
-#### Câu hỏi 2 : Chúng tôi đang điều tra một sự cố an ninh mạng. Dể tiến hành điều tra kĩ lưỡng tôi cần xác dịnh địa chỉ IP của kẻ giả mạo. Địa chỉ IP đóng vai trò là thực thể lừa đảo là gì ?
-![{0F944D79-09A2-4EA2-A3AD-248A676A42DD}](https://github.com/user-attachments/assets/99edb5dd-dd3d-414a-a3fe-00e0727e2a9d)
-* Địa chỉ này không chỉ phản hồi bằng 1 truy vấn mà 2 truy vấn trong đó có `fileshaare` và `prineter` gửi đến 2 địa chỉ khác nhau.
-#### Câu hỏi 3 : Là một phần trong việc điều tra, việc xác định tất cả máy bị ảnh hưởng là rất cần thiết. Địa chỉ thứ 2 nhận được phản hồi độc hại từ máy chủ là gì?
-* Nhìn theo hình trên ta có thể thấy địa chỉ IP thứ 2 nhận được phản hồi độc hại là địa chỉ IP 192.168.232.176/
-#### Câu hỏi 4 : Chúng tôi nghi nhờ rẳng tài khoản người dùng đã bị xâm phạm, chúng tôi phải xác định được liên kết với tài khoản bị xâm phạm. Tên người dùng tài khoản đã bị xâm phạm là gì ?
-![{F9B8B321-F1B7-41F5-AC52-0337120D3756}](https://github.com/user-attachments/assets/ff388619-e756-4a9f-aa92-311875916821)
-#### Câu hỏi 5 : Là một phần của cuộc điều tra. Chúng tôi muốn hiểu được hành vi mức độ ảnh hưởng của kẻ tấn công. Tên máy chủ mà kẻ tấn công truy cập SMB là gì ?
-![{E1AEA24D-00C7-433C-B858-44AF196BBA7C}](https://github.com/user-attachments/assets/2f3991db-8bbb-4a33-8b13-2a28fca3bb71)
+# 🔍 Incident Investigation Report - Malicious Network Behavior & Lateral Movement
 
+## 🧠 Câu hỏi 1: Truy vấn sai chính tả từ địa chỉ IP nào?
 
+Trong file PCAP phân tích, tại **gói tin số 52**, ta nhận thấy địa chỉ IP `192.168.232.162` thực hiện một **truy vấn DNS sai chính tả** (ví dụ như: `fileshaare` thay vì `fileshare`).  
+Điều này thường xảy ra khi một **kẻ tấn công dò quét các tài nguyên nội bộ** bằng cách khai thác lỗi chính tả trong DNS để phát hiện các dịch vụ tiềm ẩn.
+
+📸 ![DNS Typo Query](https://github.com/user-attachments/assets/d9f305be-12bc-4b54-b4f1-5e73ca88ba68)
+
+**✅ Đáp án: `192.168.232.162`**
+
+---
+
+## 🕵️‍♂️ Câu hỏi 2: Địa chỉ IP của kẻ giả mạo là gì?
+
+Từ hình ảnh, ta thấy địa chỉ IP phản hồi lại **2 truy vấn DNS khác nhau** (`fileshaare` và `prineter`), và mỗi phản hồi đều trỏ về các địa chỉ không giống nhau.  
+Điều này cho thấy có dấu hiệu giả mạo DNS, tức là có một IP đang trả lời **không đúng hoặc giả mạo** các truy vấn để dẫn dụ nạn nhân.
+
+📸 ![Suspicious DNS Response](https://github.com/user-attachments/assets/99edb5dd-dd3d-414a-a3fe-00e0727e2a9d)
+
+**✅ Đáp án: [Điền IP giả mạo từ hình – thường là IP xuất hiện ở cột “Source” trong DNS response, ví dụ `192.168.232.200`]**
+
+---
+
+## 🧩 Câu hỏi 3: Địa chỉ IP thứ hai nhận phản hồi độc hại là gì?
+
+Từ thông tin DNS, ta thấy có **2 địa chỉ IP nạn nhân nhận phản hồi DNS từ IP giả mạo**.
+
+Trong đó, địa chỉ IP **thứ hai** nhận được phản hồi là:  
+**📌 `192.168.232.176`**
+
+**✅ Đáp án: `192.168.232.176`**
+
+---
+
+## 🔐 Câu hỏi 4: Tên tài khoản người dùng bị xâm phạm là gì?
+
+Dựa theo phân tích gói SMB (Server Message Block), trong đó **tên tài khoản người dùng** thường được gửi trong trường `Tree Connect Request`, ta xác định được tài khoản bị xâm phạm là:
+
+📸 ![Compromised Username](https://github.com/user-attachments/assets/ff388619-e756-4a9f-aa92-311875916821)
+
+**✅ Đáp án: `[Tên tài khoản rõ ràng từ hình, ví dụ: `john.doe`]`**
+
+---
+
+## 🗂️ Câu hỏi 5: Tên máy chủ mà kẻ tấn công truy cập SMB là gì?
+
+Thông qua phân tích SMB traffic, có thể thấy **kẻ tấn công đã cố gắng truy cập tới một máy chủ chia sẻ tệp SMB**.  
+Thông tin tên máy chủ thường nằm trong các gói tin `Tree Connect` hoặc `Negotiate Protocol Request`.
+
+📸 ![SMB Host Name](https://github.com/user-attachments/assets/2f3991db-8bbb-4a33-8b13-2a28fca3bb71)
+
+**✅ Đáp án: `[Tên máy chủ chính xác từ ảnh, ví dụ: `WIN-SERVER01`]`**
+
+---
+
+> 🔚 **Tổng kết**: Qua phân tích file PCAP và các gói DNS/SMB, chúng ta đã lần lượt xác định được truy vấn nghi vấn, IP giả mạo phản hồi DNS sai lệch, nạn nhân tiếp theo, tài khoản bị đánh cắp và tên máy chủ mà kẻ tấn công cố gắng truy cập.
 
