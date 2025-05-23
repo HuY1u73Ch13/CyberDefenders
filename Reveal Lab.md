@@ -1,6 +1,10 @@
 ## Câu hỏi 1: Việc xác định tên của tiến trình độc hại giúp hiểu được bản chất của cuộc tấn công. Tên của tiến trình độc hại là gì?
-Đầu tiên tôi tải về file .dmp tôi cũng không biết đấy là file gì. Sau đó tôi đã tìm hiểu được file dump là file dump bộ nhớ, chứa bộ nhớ của toàn ram
-Tôi tìm được vài gợi ý là dùng WinDbg để phân tích file .dmp và tôi cũng thử dùng nhưng không tìm được gì. Sau đó tôi chuyển sang tool volatility3 để phân tích 
+Đầu tiên tôi tải về file .dmp tôi cũng không biết đấy là file gì. Sau đó tôi đã tìm hiểu được file dump là file dump bộ nhớ, chứa bộ nhớ của toàn ram  
+Tôi tìm được vài gợi ý là dùng WinDbg để phân tích file .dmp và tôi cũng thử dùng nhưng không tìm được gì. Sau đó tôi chuyển sang tool volatility3 để phân tích  
+Dùng câu lệnh   
+`cd "C:\Users\Admin\volatility3"`  
+`python .\vol.py -f "C:\Users\Admin\Downloads\192-Reveal\temp_extract_dir\192-Reveal.dmp" windows.pslist`
+
 ![{C4FB18C9-E830-42B2-9EC8-3455A0010872}](https://github.com/user-attachments/assets/2c4c2dc5-d22d-4c0e-860c-3cf2bebc2ff9)
 Như hình ảnh tôi thấy powershell.exe thì tôi nghĩ đây cũng là tiến trình nguy hiểm vì PowerShell cho phép thực thi các câu lệnh, script phức tạp, quản lý hệ thống, tự động hóa rất nhiều tác vụ. Điều này khiến nó là công cụ yêu thích của nhiều attacker để khai thác, tấn công hoặc thực thi mã độc.
 ## Câu hỏi 2: Biết ID tiến trình cha (PPID) của tiến trình độc hại giúp theo dõi phân cấp tiến trình và hiểu được luồng tấn công. PID cha của tiến trình độc hại là gì?
