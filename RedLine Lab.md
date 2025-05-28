@@ -15,4 +15,21 @@
 * Ta tìm thấy được `Outline.exe` là tiến trình chịu trách nhiệm cho kết nối VPN này
 ## Câu hỏi 5: Địa chỉ IP của kẻ tấn công là gì?
 ![image](https://github.com/user-attachments/assets/0898af93-066e-4e5b-b5f3-488fe6ceff0e)
+## Câu hỏi 6: URL đầy đủ của tệp PHP mà kẻ tấn công đã truy cập là gì?
+* Đầu tiên ta biết mục tiêu là đường dẫn chứa file chuỗi URL sẽ vẫn tồn tại trong ram ngay cả khi tiến trình không chạy nữa hoặc là bị xóa
+* Vậy nên đầu tiên ta sẽ dùng String để lọc ra tất cả các chuỗi trong file `MemoryDump.mem`
+* Dùng `strings "C:\Users\Admin\Downloads\106-RedLine\temp_extract_dir\MemoryDump.mem" > C:\Users\Admin\Downloads\strings_output.txt ` để in ra các chuỗi vào file `strings_output.txt`
+* Tiếp theo ta dùng `Select-String ".php" -Path "C:\Users\Admin\Downloads\strings_output.txt"` để chọn ra những chuỗi có tên php trong đấy. Sau khi lọc xong ta tìm thấy được
+* ![{06F6F137-BF3C-4F8A-A2F8-54C046E8CEEA}](https://github.com/user-attachments/assets/a1a19b6d-bc26-4667-b71d-51cb0c926966)
+* Đây là URL đầy đủ của file php mà kẻ tấn công đã truy cập
+## Câu hỏi 7: Đường dẫn đầy đủ của tệp thực thi độc hại là gì?
+* Chúng ta tận dụng file `strings_output.txt` như ở câu trên và thay đổi 1 chút thành
+* `Select-String ".exe" -Path "C:\Users\Admin\Downloads\strings_output.txt"`
+* Và chúng ta tìm theo tên tiến trình đáng ngờ ở câu 1 là `oneetx.exe` và chúng ta tìm thấy
+* ![{EAE1BDFE-34C8-483C-8B00-79E570F225D6}](https://github.com/user-attachments/assets/fd9ca8f4-96a5-4326-994a-3b8c8bb1cf94)
+* Suy ra ta có câu trả lời là `C:\Users\Tammam\ AppData\Local\Temp\c3912af058\oneetx.exe` 
 
+
+
+
+  
