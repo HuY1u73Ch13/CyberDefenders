@@ -26,6 +26,7 @@ Nhiệm vụ của bạn là điều tra tệp thực thi này bằng cách phâ
 * Tôi thử search như này trên MALWARE BAZAAR thì được như trên ảnh sau thi bấm vào và lướt xuống thì ta thấy kết quả của câu trả lời này,
 * `detect_Redline_Stealer` 
 ## Câu hỏi 8: Hiểu được nhóm phần mềm độc hại nào đang nhắm vào tổ chức sẽ giúp lập kế hoạch bảo mật chiến lược cho tương lai và ưu tiên các nguồn lực dựa trên mối đe dọa. Bạn có thể cung cấp các bí danh phần mềm độc hại khác nhau liên quan đến địa chỉ IP độc hại theo ThreatFox không?
-* 
+* Trên trang `https://threatfox.abuse.ch/` ta vào phần `ThreatFox database` ta sẽ thấy phần search và ta search `malware:redline` kết quả sẽ trả về bí danh là `RECORDSTEALER`
 ## Câu hỏi 9: Bằng cách xác định các DLL được nhập của phần mềm độc hại, chúng tôi có thể cấu hình các công cụ bảo mật để theo dõi việc tải hoặc sử dụng bất thường các DLL cụ thể này. Bạn có thể cung cấp DLL được phần mềm độc hại sử dụng để leo thang đặc quyền không?
-* 
+* ![{EBA4C5B3-67AE-471F-8821-3CB63278A2FF}](https://github.com/user-attachments/assets/54236e85-e079-41b5-98f1-9473cbb12225)
+
