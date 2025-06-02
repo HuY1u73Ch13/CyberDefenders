@@ -10,6 +10,9 @@
 * ![{C44C4E08-879A-4481-8964-31CE2D0FC51C}](https://github.com/user-attachments/assets/809f02b1-f894-4eee-b58f-c2ba59852694)
 * Ở mục `First Submission` ta có thể thấy được file này lần đầu được cộng đồng up lên VirusTotal để check là vào lúc `2020-10-15 02:47`
 ## Câu hỏi 5: Để loại bỏ hoàn toàn mối đe dọa khỏi hệ thống của Industries, chúng ta cần xác định tất cả các thành phần bị phần mềm độc hại thả xuống. Tên của tệp .dat mà phần mềm độc hại thả vào thư mục AppData là gì ?
-* 
+* ![{3AEFED7C-A82B-47F6-9849-7A4B8F5A9FDB}](https://github.com/user-attachments/assets/affe53f4-6f9b-478d-8db7-22c153273bcf)
+* `https://redcanary.com/blog/threat-intelligence/yellow-cockatoo/`
 ## Câu hỏi 6: Điều quan trọng là phải xác định máy chủ C2 mà phần mềm độc hại giao tiếp để chặn giao tiếp của nó và ngăn chặn việc rò rỉ dữ liệu thêm. Máy chủ C2 mà phần mềm độc hại đang giao tiếp là gì?
-* 
+* ![{B10C0785-D91C-4465-A1D8-5DF6565461C5}](https://github.com/user-attachments/assets/3860c865-56f8-4f65-9b44-4bfa9412a96a)
+* Cùng trang với link bài viết ở trên
+
