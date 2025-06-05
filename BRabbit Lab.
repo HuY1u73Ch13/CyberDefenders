@@ -1,6 +1,28 @@
 ## Câu hỏi 1: Email lừa đảo được sử dụng để gửi tệp đính kèm độc hại cho thấy một số dấu hiệu của nỗ lực kỹ thuật xã hội tiềm ẩn. Nhận biết các dấu hiệu này có thể giúp xác định các mối đe dọa tương tự trong tương lai.
 Địa chỉ email đáng ngờ đã gửi tệp đính kèm là gì?
 *
-## Câu hỏi 2: 
+## Câu hỏi 2: Ransomware được xác định là một phần của họ phần mềm độc hại đã biết. Việc xác định tên họ của nó có thể cung cấp thông tin chi tiết quan trọng về hành vi và chiến lược khắc phục của nó.
+Tên họ của ransomware được xác định trong quá trình điều tra là gì?
 *
-## Câu hỏi 
+## Câu hỏi 3: Khi thực hiện, ransomware thả một tệp vào hệ thống bị xâm nhập để khởi tạo tải trọng của nó. Việc xác định tệp này là điều cần thiết để hiểu quy trình lây nhiễm của nó.
+Tên của tệp đầu tiên mà ransomware thả là gì?
+*
+## Câu hỏi 4: Bên trong tệp bị thả, phần mềm độc hại chứa các hiện vật được mã hóa cứng, bao gồm tên người dùng và mật khẩu có thể cung cấp manh mối về nguồn gốc hoặc cấu hình của nó.
+Tên người dùng duy nhất được tìm thấy trong tệp bị thả là gì?
+*
+## Câu hỏi 5: Sau khi thực hiện, ransomware đã giao tiếp với máy chủ C2. Nhận biết các kỹ thuật giao tiếp của nó có thể hỗ trợ giảm thiểu. Kỹ thuật phụ nào của MITRE ATT&CK mô tả việc ransomware sử dụng giao thức web để gửi và nhận dữ liệu?
+*
+## Câu hỏi 6: Cơ chế bền bỉ là đặc điểm của ransomware tinh vi. Việc xác định cách đạt được sự bền bỉ có thể hỗ trợ phục hồi và ngăn ngừa tái nhiễm. ID kỹ thuật phụ MITRE ATT&CK liên quan đến kỹ thuật bền bỉ của ransomware là gì?
+*
+## Câu hỏi 7: Là một phần của chuỗi lây nhiễm, ransomware đã tạo ra các tác vụ cụ thể để đảm bảo hoạt động liên tục của nó. Việc nhận ra các tác vụ này rất quan trọng để khôi phục hệ thống. Tên của các tác vụ được ransomware tạo ra trong quá trình thực thi là gì?
+*
+## Câu hỏi 8: nhị phân độc hại dispci.exehiển thị thông báo đáng ngờ khi thực thi, thúc giục người dùng vô hiệu hóa khả năng phòng thủ của họ. Chiến thuật này nhằm mục đích tránh bị phát hiện và cho phép thực thi toàn bộ ransomware. Thông báo đáng ngờ nào được hiển thị trong Console khi thực thi nhị phân này?
+*
+## Câu hỏi 9: Để sửa đổi Master Boot Record (MBR) và mã hóa ổ cứng của nạn nhân, ransomware đã sử dụng một trình điều khiển cụ thể. Việc nhận ra trình điều khiển này là điều cần thiết để hiểu cơ chế mã hóa.
+Tên của trình điều khiển được sử dụng để mã hóa ổ cứng và sửa đổi MBR là gì?
+*
+## Câu hỏi 10: Việc quy kết là chìa khóa để hiểu bối cảnh mối đe dọa. Ransomware được liên kết với một nhóm tấn công đã biết thông qua các chiến thuật, kỹ thuật và quy trình (TTP) của nhóm này.
+Tên của tác nhân đe dọa chịu trách nhiệm cho chiến dịch ransomware này là gì?
+*
+## Câu hỏi 11: Phần mềm tống tiền khiến hệ thống không thể khởi động bằng cách làm hỏng các thành phần hệ thống quan trọng. Việc xác định kỹ thuật được sử dụng sẽ cung cấp thông tin chi tiết về khả năng phá hoại của nó.ID MITRE ATT&CK cho kỹ thuật được sử dụng để làm hỏng chương trình cơ sở hệ thống và ngăn chặn khởi động là gì?
+*
