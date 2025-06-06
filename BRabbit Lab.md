@@ -1,5 +1,4 @@
-## Câu hỏi 1: Email lừa đảo được sử dụng để gửi tệp đính kèm độc hại cho thấy một số dấu hiệu của nỗ lực kỹ thuật xã hội tiềm ẩn. Nhận biết các dấu hiệu này có thể giúp xác định các mối đe dọa tương tự trong tương lai.
-Địa chỉ email đáng ngờ đã gửi tệp đính kèm là gì?
+## Câu hỏi 1: Email lừa đảo được sử dụng để gửi tệp đính kèm độc hại cho thấy một số dấu hiệu của nỗ lực kỹ thuật xã hội tiềm ẩn. Nhận biết các dấu hiệu này có thể giúp xác định các mối đe dọa tương tự trong tương lai. Địa chỉ email đáng ngờ đã gửi tệp đính kèm là gì?
 * ![{89F82836-92C4-4A2F-BF59-A0A168AB0494}](https://github.com/user-attachments/assets/40230079-7479-41f3-9fb7-fd0aab086bff)
 * Đầu tiên tôi giải nén trên window thì thấy nó có 1 file warning.txt thì tôi mang file này vào máy ảo Kali của tôi để giải nén.
 * ![{A5C52792-C561-4FD4-AAC9-5E6980AC9EE7}](https://github.com/user-attachments/assets/aa4a2323-6fe9-4b9c-8c88-043893edac0f)
@@ -40,6 +39,10 @@
 ## Câu hỏi 9: Để sửa đổi Master Boot Record (MBR) và mã hóa ổ cứng của nạn nhân, ransomware đã sử dụng một trình điều khiển cụ thể. Việc nhận ra trình điều khiển này là điều cần thiết để hiểu cơ chế mã hóa.Tên của trình điều khiển được sử dụng để mã hóa ổ cứng và sửa đổi MBR là gì?
 * ![{59F48C3A-B75E-498C-A958-490C23193972}](https://github.com/user-attachments/assets/bf73eec9-65f8-4a49-86d4-c2a5198f1a5a)
 ## Câu hỏi 10: Việc quy kết là chìa khóa để hiểu bối cảnh mối đe dọa. Ransomware được liên kết với một nhóm tấn công đã biết thông qua các chiến thuật, kỹ thuật và quy trình (TTP) của nhóm này.Tên của tác nhân đe dọa chịu trách nhiệm cho chiến dịch ransomware này là gì?
-*
+* ![{8DD70A7C-B244-4FDC-B537-750CE86CDA62}](https://github.com/user-attachments/assets/0a5ab829-6a32-495a-a5f7-f5e3c835eb7d)
+* https://attack.mitre.org/software/S0606/
+* Tìm theo tên của phần mềm BadRabbit
 ## Câu hỏi 11: Phần mềm tống tiền khiến hệ thống không thể khởi động bằng cách làm hỏng các thành phần hệ thống quan trọng. Việc xác định kỹ thuật được sử dụng sẽ cung cấp thông tin chi tiết về khả năng phá hoại của nó.ID MITRE ATT&CK cho kỹ thuật được sử dụng để làm hỏng chương trình cơ sở hệ thống và ngăn chặn khởi động là gì?
-*
+* ![{0F44C548-70F8-4A59-8377-7ED90BE56C87}](https://github.com/user-attachments/assets/1dd11d5e-d6f3-491b-8e78-3ab3d323ff42)
+* Bad Rabbit has used an executable that installs a modified bootloader to prevent normal boot-up.
+
