@@ -18,7 +18,11 @@
 * Vì `svchost.exe` là một tiến trình hệ thống quan trong của window, nó đươc thiết kế để trở thành 1 phần không thiếu của hệ điều hành và nhóm nhiều dịch vụ window vào 1 tiến trình
 * Nó thường được các attacker dùng để chạy các thư viện và liên kết động(DLL) dưới dạng dịch vụ hợp pháp.
 ## Câu hỏi 6: Có một tệp lạ được tham chiếu trong quy trình gần đây. Cung cấp đường dẫn đầy đủ của tệp đó.
-* 
+*  `python ./vol.py -f "D:\Downloands\99-BlackEnergy\temp_extract_dir\CYBERDEF-567078-20230213-171333.raw" handles`
+*  Khi tôi dùng plugin handles thì nó sẽ liệt kê toàn bộ các handle mà mỗi tiến trình mở ví dụ như là: file, registry, key, process, thread, ...
+*  Sau khi được kết quả tôi cho kết quả vào notepad và tìm theo tên .sys
+*  ![{FC15B868-0D38-4D7C-9E88-0B09782E7A76}](https://github.com/user-attachments/assets/72ac20e8-4c07-404a-93a4-1b5996154860)
+*  Và được kết quả như này.
 ## Câu hỏi 7: Tên của tệp DLL được đưa vào từ tiến trình gần đây là gì?
 *
 ## Câu hỏi 8: Địa chỉ cơ sở của DLL được tiêm là gì?
