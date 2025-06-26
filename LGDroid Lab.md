@@ -12,10 +12,10 @@
 * ![{4530E3A9-0432-4ED5-85E6-9477E3B0C0FD}](https://github.com/user-attachments/assets/38f467e1-ee42-4b78-8733-c287839181e3)
 * Lướt xuống ta thấy phần full charge là + 5 phút 1s nên ta được kết quả là `2021-05-21 13:17`
 ## Câu hỏi 5: Mật khẩu cho điểm truy cập WIFI được kết nối gần đây nhất là gì?
-* 
+* ![{2226C442-0DD4-4E08-A319-42E0006F2CDB}](https://github.com/user-attachments/assets/1c0a3aab-b2fc-421f-aa76-4b6b781fea11)
 ## Câu hỏi 6: Người dùng tập trung vào ứng dụng nào 2021-05-20 14:13:27?
-*
+* ![{252A06C1-91FA-467A-8B77-0D3F4D0529BA}](https://github.com/user-attachments/assets/080def7f-1e04-4912-a020-70a5eeeed697)
 ## Câu hỏi 7: Nghi phạm đã xem YouTube trong bao lâu 2021-05-20?
-*
-## Câu hỏi 8: Chỉ số tương đồng về mặt cấu trúc của hình ảnh " suspicious.jpg" so với hình ảnh có hình ảnh tương tự được chụp bằng điện thoại di động" là gì?
+* ![{9B0C9EC0-0BA9-49E7-9234-F8913BC9D190}](https://github.com/user-attachments/assets/1692afc0-f882-4080-9b56-784c0c9d8f2b)
+## Câu hỏi 8: Chỉ số tương đồng về mặt cấu trúc của hình ảnh "suspicious.jpg" so với hình ảnh có hình ảnh tương tự được chụp bằng điện thoại di động là gì?
 *
