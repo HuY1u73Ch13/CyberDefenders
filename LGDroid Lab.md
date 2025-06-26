@@ -18,4 +18,4 @@
 ## Câu hỏi 7: Nghi phạm đã xem YouTube trong bao lâu 2021-05-20?
 * ![{9B0C9EC0-0BA9-49E7-9234-F8913BC9D190}](https://github.com/user-attachments/assets/1692afc0-f882-4080-9b56-784c0c9d8f2b)
 ## Câu hỏi 8: Chỉ số tương đồng về mặt cấu trúc của hình ảnh "suspicious.jpg" so với hình ảnh có hình ảnh tương tự được chụp bằng điện thoại di động là gì?
-*
+* ![{9156CAD5-200C-4C2B-82AD-464F88ACED8F}](https://github.com/user-attachments/assets/8bc7e8db-7875-4011-b5ee-7bc5504c7391)
