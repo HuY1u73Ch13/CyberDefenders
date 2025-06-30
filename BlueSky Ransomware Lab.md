@@ -8,15 +8,17 @@
 * ![image](https://github.com/user-attachments/assets/e3d16811-4287-4838-889b-105007c36515)
 * ![image](https://github.com/user-attachments/assets/9a1b011e-2374-4d3d-b3db-653dcd9d46b0)
 ## Câu hỏi 5: Kẻ tấn công thường sử dụng Process Injection để tăng quyền trong hệ thống. Kẻ tấn công đã tiêm C2 vào quy trình nào để giành được quyền quản trị?
-* 
+* ![{BBDC05C5-BDD7-434A-9128-A5895F015257}](https://github.com/user-attachments/assets/e190a045-eb38-4178-9fa2-e466409b1de3)
 ## Câu hỏi 6: Sau khi leo thang đặc quyền, kẻ tấn công đã cố gắng tải xuống một tệp. Bạn có thể xác định URL của tệp đã tải xuống này không?
-* 
+* ![{207BE240-0426-41E8-9BBF-531622AAC507}](https://github.com/user-attachments/assets/3039103a-ad5d-4f5c-ac74-a271da574146)
 ## Câu hỏi 7: Hiểu được Mã định danh bảo mật (SID) nhóm nào mà tập lệnh độc hại kiểm tra để xác minh quyền của người dùng hiện tại có thể cung cấp thông tin chi tiết về ý định của kẻ tấn công. Bạn có thể cung cấp Mã định danh bảo mật nhóm cụ thể đang được kiểm tra không?
-* 
+* ![image](https://github.com/user-attachments/assets/9f0214b4-9b61-4376-b26a-5b48d37b80e3)
+* Check trong gói tin `http://87.96.21.84/checking.ps1`
 ## Câu hỏi 8: Windows Defender đóng vai trò quan trọng trong việc bảo vệ chống lại các mối đe dọa mạng. Nếu kẻ tấn công vô hiệu hóa nó, hệ thống sẽ dễ bị tấn công hơn. Kẻ tấn công sử dụng khóa sổ đăng ký nào để vô hiệu hóa các chức năng của Windows Defender? Cung cấp chúng theo cùng thứ tự đã tìm thấy.
-* 
+* ![image](https://github.com/user-attachments/assets/a2244646-110b-490e-a56a-1fc99fa21089)
+* Vẫn là gói tin lúc nãy
 ## Câu hỏi 9: Bạn có thể xác định URL của tệp thứ hai được kẻ tấn công tải xuống không?
-* 
+* ![{3FC63BC1-BF2C-4199-A4A2-3B706D4C3576}](https://github.com/user-attachments/assets/61d9af84-6b04-4a4d-874a-07d2cbc14c43)
 ## Câu hỏi 10: Xác định các tác vụ độc hại và hiểu cách chúng được sử dụng để duy trì tính bền bỉ giúp củng cố khả năng phòng thủ chống lại các cuộc tấn công trong tương lai. Tên đầy đủ của tác vụ do kẻ tấn công tạo ra để duy trì tính bền bỉ là gì?
 * 
 ## Câu hỏi 11: Dựa trên phân tích của bạn về tệp độc hại thứ hai, ID MITRE của chiến thuật chính mà tệp thứ hai cố gắng thực hiện là gì?
