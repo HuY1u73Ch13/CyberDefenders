@@ -11,11 +11,13 @@
 * `python ./vol.py -f "D:\Downloands\67-AfricanFalls2\temp_extract_dir\c49-AfricanFalls2\20210430-Win10Home-20H2-64bit-memdump.mem" windows.pslist`
 * ![{02B2AE11-6C42-43E2-908A-F0E1FDC32F10}](https://github.com/user-attachments/assets/0e9aeb3e-4ca7-49cb-a3c4-14d5dae94363)
 ## Câu hỏi 4: Có bao nhiêu kết nối mạng đã được thiết lập tại thời điểm mua lại?
-* 
+* ![{6AE36EC4-B9BD-4027-BCF9-672B893BD49C}](https://github.com/user-attachments/assets/d0e3c60b-8e5a-406e-9d04-ce925c707771)
+* Đếm những kết nối có trạng thái `ESTABLISHED` và kết quả là `10`
 ## Câu hỏi 5: Chrome đã thiết lập kết nối mạng với tên miền nào?
-*
+* ![{72F7736E-C6A8-4B9C-8C5E-4822BF03701D}](https://github.com/user-attachments/assets/e6d5e6ad-1ebe-47ff-a7cd-1628d65ed7fd)
+* ![{F966C903-99C7-44EE-8A48-54C214AEFA95}](https://github.com/user-attachments/assets/d2a90064-4e39-4bdf-8d55-5236908c7a20)
 ## Câu hỏi 6: Giá trị băm MD5 của tiến trình thực thi cho PID 6988 là gì ?
-*
+* 
 ## Câu hỏi 7: Bạn có thể xác định từ bắt đầu ở vị trí 0x45BE876 và dài 6 byte không?
 *
 ## Câu hỏi 8: Ngày và giờ tạo của tiến trình cha của powershell.exe là gì ?
