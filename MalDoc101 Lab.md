@@ -24,9 +24,10 @@
 * ![{98908545-C8AB-4B81-8EA2-A9BFED530B7A}](https://github.com/user-attachments/assets/1c2611a5-0041-4c6e-8410-673916760aec)
 * Ta có thể thấy đây là chuỗi base64 dùng để chống phân tích thẳng base64
 ## Câu hỏi 7: Chương trình nào được thực thi bởi chuỗi được mã hóa Base64?
-* 
+* `powershell`
 ## Câu hỏi 8: Lớp WMI nào được sử dụng để tạo quy trình khởi chạy Trojan?
-*
+* `Win32_Process`
 ## Câu hỏi 9: Nhiều tên miền đã được liên hệ để tải xuống Trojan. Cung cấp FQDN đầu tiên theo gợi ý được cung cấp.
-*
+* ![{8EADE4B6-3531-4739-AA61-19D2ED97447B}](https://github.com/user-attachments/assets/8bcda937-2380-4838-bc6f-6a027db822e9)
+
 
