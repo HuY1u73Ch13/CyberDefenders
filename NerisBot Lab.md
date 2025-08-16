@@ -13,4 +13,4 @@
 * `index=* sourcetype=zeek:files tx_hosts="195.88.191.59" | table _time seen_bytes md5 sha1 sha256` dùng query này để phân tích xem được mã hash của các tệp đã được zeek phát hiện có liên quan đến máy chủ 195.88.191.59 
 * Tôi đã check cả 5 mã hash này trên virus total và tôi đã tìm đc đáp án là 5.
 ## Câu hỏi : Mã băm SHA256 của tệp độc hại được ngụy trang dưới dạng .txt tệp là gì?
-* 
+* `6fbc4d506f4d4e0a64ca09fd826408d3103c1a258c370553583a07a4cb9a6530`
