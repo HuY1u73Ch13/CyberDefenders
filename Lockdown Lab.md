@@ -34,7 +34,8 @@
 * <img width="915" height="77" alt="image" src="https://github.com/user-attachments/assets/66c47287-ddb1-46a7-9d71-a195932fcb2c" />
 * Từ Scan của plugin cmdLine tôi thấy w3wp.exe có nghi ngờ nên tôi thử tìm PID của w3wp.exe bằng plugin pstree và tôi có thể tìm được PID của
 ## Câu hỏi 9: Kiểm tra tĩnh cho thấy tệp nhị phân đã được đóng gói để cản trở việc phân tích. Trình đóng gói nào đã được sử dụng để làm tối nghĩa nó?
-* 
+* <img width="1227" height="812" alt="image" src="https://github.com/user-attachments/assets/8e3cf428-cf7c-4a1c-a5d5-9997a0609155" />
+* Vào VirusTotal tôi sang phần detail dòng cuối cùng của ảnh có thể thấy malware này được đóng gói bằng UPX
 ## Câu hỏi 10: Phân tích tình báo mối đe dọa cho thấy phần mềm độc hại đang chuyển hướng đến máy chủ chỉ huy và kiểm soát của nó. Nó sẽ liên hệ với tên miền đủ điều kiện (FQDN) nào?
 * 
 ## Câu hỏi 11: Intel nguồn mở liên kết hàm băm đó với một loại mã độc RAT phổ biến. Mẫu này thuộc họ phần mềm độc hại nào?
